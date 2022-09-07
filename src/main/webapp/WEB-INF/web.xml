@@ -4,4 +4,21 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>StoreController</servlet-name>
+    <servlet-class>controllers.StoreController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>StoreController</servlet-name>
+    <url-pattern>/addCustomer</url-pattern>
+    <url-pattern>/addProduct</url-pattern>
+    <url-pattern>/addToOrder</url-pattern>
+    <url-pattern>/inventory</url-pattern>
+    <url-pattern>/replenishInventory</url-pattern>
+    <url-pattern>/searchCustomer</url-pattern>
+    <url-pattern>/newOrder</url-pattern>
+    <url-pattern>/orderHistory</url-pattern>
+  </servlet-mapping>
 </web-app>
